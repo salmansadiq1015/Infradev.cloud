@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500;600&family=Pattaya&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+.header-logo > h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: -1px 1px 0px #444, -2px 2px 0px #03abee;
+  letter-spacing: 2px;
+  font-family: "Pattaya", sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+.header-logo > h1 > span {
+  color: rgb(62, 63, 63);
+  text-shadow: -1px 1px 0px #00ffff, -1px 2px 0px #03abee;
+}
+@media (max-width: 600px) {
+  .nav-btns > a {
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .header-logo > h1 {
+    margin-left: -4rem;
+  }
+}

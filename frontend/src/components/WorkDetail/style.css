@@ -1,0 +1,248 @@
+.work-page1-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding: 6rem 4rem;
+}
+.page-section1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.page-section1 > h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #111;
+}
+.page-section1 > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #000;
+}
+.page-section1 > p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #555;
+  width: 70%;
+  text-align: justify;
+}
+
+/* --------------Section2-0----------- */
+.page-section2 {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding: 0rem 0.5rem;
+}
+.page-section2 .page-website {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0rem;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+.page-website > span {
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+}
+.page-website > .page-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 2rem;
+  border-left: 1px solid #ccc;
+}
+.page-section2 > img {
+  width: 95%;
+  margin: auto;
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.3rem;
+  filter: grayscale(80%);
+  transition: 0.5s;
+}
+.page-section2 > img:hover {
+  filter: grayscale(0%);
+}
+
+/* ----------Section3-------- */
+.page-section3 {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.page-section3 > h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.page-section3 > p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+}
+.page-section3 > h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+  margin: 1rem 0rem;
+}
+.page-section3 > .page1-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+}
+.page1-tags > span {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  background: rgb(250, 246, 223);
+}
+.page-section3 > .engineer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.engineer > img {
+  height: 27rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+  filter: grayscale(70%);
+  transition: 0.5s;
+  margin: auto;
+}
+.engineer > img:hover {
+  transform: scale(1.07);
+  filter: grayscale(0%);
+}
+.engineer > .eng-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.eng-content > p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+}
+.eng-content > span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  text-align: justify;
+}
+.page-section3 > .web-percentage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+  margin-top: 4rem;
+}
+.web-percentage > .per-box {
+  display: flex;
+  gap: 1rem;
+}
+.per-box > span {
+  width: 1px;
+  height: 1.5rem;
+  background: #222;
+}
+.per-box > .pagebox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.per-box > .pagebox > h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+.per-box > .pagebox > span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+/* -----------------Responsiveness----------- */
+
+@media (max-width: 980px) {
+  .work-page1-wrapper {
+    padding: 6rem 3rem;
+  }
+  .page-section1 > p {
+    width: 80%;
+  }
+  .page-section3 {
+    padding: 5rem 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .work-page1-wrapper {
+    padding: 6rem 3rem;
+  }
+  .page-section1 > h1 {
+    font-size: 2.6rem;
+  }
+  .page-section1 > p {
+    width: 90%;
+  }
+  .page-section3 {
+    padding: 5rem 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .work-page1-wrapper {
+    padding: 6rem 1rem;
+  }
+  .page-section1 > h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .page-section1 > p {
+    width: 98%;
+  }
+  .page-section2 .page-website {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 0.8rem 1rem;
+  }
+  .page-website > .page-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 1rem;
+    border-top: 1px solid #ccc;
+    border-left: none;
+    padding-top: 1rem;
+  }
+  .page-website > .page-box:nth-child(1) {
+    border-top: none;
+  }
+  .page-section2 > img {
+    width: 99%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .page-section3 {
+    padding: 5rem 1rem;
+  }
+}

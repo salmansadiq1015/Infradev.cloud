@@ -1,0 +1,258 @@
+.progress-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding: 5rem 4rem;
+}
+.progress-section1 {
+  width: 100%;
+  min-height: 90vh;
+  background: #fff;
+  user-select: none;
+}
+.progress-section1 > .progress-section-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.progress-section-content > h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #111;
+}
+.progress-section-content > h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #000;
+}
+.progress-section-content > p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #555;
+  width: 60%;
+  text-align: justify;
+}
+/* clip-path: polygon(40% 25%, 10% 0%, 10% 100%, 20% 100%, 20% 0%, 30% 0%, 30% 100%, 30% 75%, 40% 0%, 50% 0%, 50% 100%, 60% 100%, 60% 0%, 70% 0%, 70% 100%, 80% 100%, 80% 0%, 90% 0%, 90% 100%, 100% 100%, 70.31% 70.46%, 100% 0%, 100% 10%, 0% 10%, 0% 20%, 50% 55%, 100% 20%, 100% 30%, 0% 30%, 0% 40%, 100% 40%, 100% 50%, 0% 50%, 0% 60%, 100% 60%, 100% 70%, 0% 70%, 0% 80%, 100% 80%, 100% 90%, 0% 90%, 0% 100%);
+background-color: #9c47eb */
+
+/* ---------Section----------- */
+.progress-sectio2 {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+}
+.progress-sectio2 > .psection2-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+.psection2-wrapper > .psection2-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+}
+.psection2-box > .images {
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  object-fit: cover;
+  -webkit-clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+}
+.psection2-box > .images > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.psection2-box > .images > img:hover {
+  transform: scale(1.1);
+}
+.psection2-box > .psection2-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.psection2-content > h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #111;
+}
+.psection2-content > h1 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #000;
+}
+.psection2-content > p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+  text-align: justify;
+}
+.psection2-content > p > b {
+  color: #000;
+}
+.psection2-content > h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 0.5rem;
+}
+.psection2-content > .progress-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.progress-tags > span {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #333;
+  background: rgb(245, 237, 194);
+  border-radius: 1rem;
+}
+.progress-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.progress-phases > p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+}
+.progress-phases > p > b {
+  color: #000;
+}
+.progress-phases > span {
+  width: 2rem;
+  height: 1px;
+  background: #222;
+}
+.progress-tags1 {
+  display: flex;
+  gap: 1.5rem;
+}
+.progress-tags1 > span {
+  width: 1px;
+  height: 2rem;
+  background: #222;
+}
+.progress-tags1 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.progress-tags1 > div > p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #444;
+}
+
+/* ---------------Section 3------------ */
+.progress-section3 {
+  width: 100%;
+  padding: 5rem 0rem;
+}
+.progress-section3 > .progress-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.progress-section-content > h1 {
+  width: 50%;
+  font-size: 2.5rem;
+}
+.progress-values {
+  margin: 4rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+}
+.progress-values > .values-box {
+  display: flex;
+  gap: 1rem;
+}
+.values-box > span {
+  width: 1px;
+  height: 1.5rem;
+  background: #222;
+}
+.values-box > p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #444;
+}
+.values-box > p > b {
+  color: #000;
+}
+/* -----------Section4--------- */
+.progress-section4 {
+  width: 100%;
+  min-height: 70vh;
+  background: #fff;
+}
+/* -------------Responsiveness----------- */
+
+@media (max-width: 980px) {
+  .progress-wrapper {
+    padding: 6rem 3rem;
+  }
+  .progress-section-content > p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 780px) {
+  .progress-wrapper {
+    padding: 6rem 2rem;
+  }
+  .progress-section-content > p {
+    width: 85%;
+  }
+  .progress-section-content > h1 {
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px) {
+  .progress-wrapper {
+    padding: 6rem 1rem;
+  }
+  .psection2-wrapper > .psection2-box {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+  }
+  .progress-section-content > p {
+    width: 98%;
+  }
+  .progress-section-content > h1 {
+    width: 98%;
+  }
+}

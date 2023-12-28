@@ -1,0 +1,157 @@
+.work-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  user-select: none;
+}
+.work-wrapper > .work-section1 {
+  width: 100%;
+  padding: 5rem 8rem;
+  min-height: 55vh;
+}
+.work-section1 > .ws1-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.ws1-content > h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+.ws1-content > h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000;
+  width: 80%;
+}
+.ws1-content > p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  width: 65%;
+  text-align: justify;
+}
+
+/* -----------Section 2-------- */
+.work-section2 {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding: 4rem 8rem;
+}
+
+/* ------Section3----------- */
+.work-section3 {
+  width: 100%;
+  min-height: 60%;
+  background: #fff;
+}
+.work-section3 > .ws3-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem 5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ws3-content > h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+  width: 70%;
+}
+.ws3-content > .image {
+  width: 100%;
+}
+.ws3-content > .image > img {
+  width: 10rem;
+  float: left;
+  margin-left: 11rem;
+}
+
+/* ---------Section4-------- */
+.work-section4 {
+  width: 100%;
+  min-height: 70vh;
+  background: #fff;
+}
+
+/* ---------Section5--------- */
+.work-section2 > h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.work-section-5 {
+  width: 100%;
+  min-height: 70vh;
+  padding: 1rem 3rem;
+}
+
+/* -----------Responsiveness---------- */
+@media (max-width: 930px) {
+  .ws3-content > .image > img {
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 800px) {
+  .work-wrapper > .work-section1 {
+    padding: 4rem 3rem;
+  }
+  .ws1-content > h2 {
+    font-size: 2.6rem;
+    width: 80%;
+  }
+  .ws1-content > p {
+    width: 80%;
+  }
+  .work-section2 {
+    padding: 4rem 3rem;
+  }
+  .work-section3 > .ws3-content {
+    padding: 3rem 2rem;
+  }
+  .work-section3 > .ws3-content {
+    padding: 3rem 1rem;
+  }
+  .ws3-content > .image > img {
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 700px) {
+  .work-section3 > .ws3-content {
+    padding: 3rem 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .work-wrapper > .work-section1 {
+    padding: 4rem 1rem;
+  }
+  .ws1-content > h2 {
+    font-size: 2.6rem;
+    width: 99%;
+  }
+  .ws1-content > p {
+    width: 98%;
+  }
+  .work-section2 {
+    padding: 4rem 1rem;
+  }
+  .work-section-5 {
+    padding: 1rem 0.5rem;
+  }
+  .ws3-content > h1 {
+    width: 98%;
+  }
+  .work-section3 > .ws3-content {
+    padding: 3rem 1rem;
+  }
+  .ws3-content > .image > img {
+    margin-left: 0.1rem;
+  }
+}

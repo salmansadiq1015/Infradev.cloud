@@ -1,0 +1,184 @@
+.footer-container {
+  width: 100%;
+  padding: 2rem 2rem;
+  background: #fff;
+  color: #111;
+  user-select: none;
+  overflow-x: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.footer-container > .footer-main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.footer-main > .main-left {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  grid-gap: 1rem;
+}
+.main-left > .footer-left,
+.footer-main1,
+.footer-main2,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.main-left > .footer-left > h3,
+.footer-main1 > h3,
+.footer-main2 > h3,
+.footer-right > h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+}
+.main-left > .footer-left > ul,
+.footer-main1 > ul,
+.footer-main2 > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.main-left > .footer-left > ul > li,
+.footer-main1 > ul > li .footer-main2 > ul > li {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+.footer-right {
+  padding-left: 5rem;
+}
+.footer-right > p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+}
+.footer-right > form {
+  width: 85%;
+  display: flex;
+  border-radius: 0.3rem;
+  height: 3.2rem;
+  overflow: hidden;
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+  border: 2px solid #ccc;
+}
+.footer-right > form > input {
+  width: 88%;
+  height: 100%;
+  background: transparent;
+  padding: 0.3rem 0.7rem;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+}
+.footer-right > form > input::placeholder {
+  color: #333;
+}
+.footer-right > form > input:focus {
+  border-bottom: 2px solid #111;
+}
+.footer-right > form > button {
+  width: 12%;
+  height: 100%;
+  margin: auto;
+  background: #222;
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+  transition: 0.2s all ease-in-out;
+}
+.footer-right > form > button:hover {
+  background: #000;
+}
+.footer-right > form > button > svg {
+  margin: auto;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem 0.5rem;
+}
+.footer-bottom > .logo > a > h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  text-shadow: -1px, 1px, 0px, #777, -2px, 2px, 0px, #555;
+}
+.footer-bottom > .copy-right > h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+.gears-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.gears-footer > svg {
+  font-size: 18rem;
+  color: #0f0f0f1c;
+  animation: gearf 8s linear infinite;
+}
+@keyframes gearf {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 950px) {
+  .footer-right {
+    padding-left: 3rem;
+  }
+  .footer-right > form > input {
+    width: 85%;
+  }
+  .footer-right > form > button {
+    width: 15%;
+  }
+}
+@media (max-width: 750px) {
+  .footer-right {
+    padding-left: 0rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-right {
+    margin-top: 1.5rem;
+    padding-left: 0rem;
+  }
+  .footer-right > form {
+    width: 95%;
+  }
+  .footer-right > form > input {
+    width: 85%;
+  }
+  .footer-right > form > button {
+    width: 15%;
+  }
+}
+@media (max-width: 528px) {
+  .footer-main2 {
+    margin-top: 2rem;
+  }
+}
